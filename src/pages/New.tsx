@@ -4,16 +4,18 @@ interface Props {}
 
 export const New: React.FC<Props> = ({}) => (
   <div className="w-full mx-auto px-4 md:px-6 md:w-192">
-    <section>
-      <h1>Create a new repository</h1>
-      <p>
+    <section className="pt-10 pb-6">
+      <h1 className="mb-1">Create a new repository</h1>
+      <p className="text-sm">
         A repository contains all project files, including the revision history.
         Already have a project repository elsewhere?{" "}
-        <a href="https://github.com/new/import">Import a repository.</a>
+        <a href="https://github.com/new/import" className="text-sm">
+          Import a repository.
+        </a>
       </p>
     </section>
 
-    <section>
+    <section className="border-t border-gray-200">
       <div className="grid grid-cols-3">
         <label className="col-span-2">
           Owner <span>*</span>
