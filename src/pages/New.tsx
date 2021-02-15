@@ -3,24 +3,24 @@ import React from "react";
 interface Props {}
 
 export const New: React.FC<Props> = ({}) => (
-  <div>
+  <div className="w-full mx-auto px-4 md:px-6 md:w-192">
     <section>
       <h1>Create a new repository</h1>
       <p>
         A repository contains all project files, including the revision history.
         Already have a project repository elsewhere?{" "}
+        <a href="https://github.com/new/import">Import a repository.</a>
       </p>
-      <a href="https://github.com/new/import">Import a repository.</a>
     </section>
 
     <section>
       <div className="grid grid-cols-3">
-        <p className="col-span-2">
+        <label className="col-span-2">
           Owner <span>*</span>
-        </p>
-        <p>
+        </label>
+        <label>
           Repository name <span>*</span>
-        </p>
+        </label>
         <button>yaytomato</button>
         <p>/</p>
         <input />
