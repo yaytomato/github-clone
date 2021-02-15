@@ -1,3 +1,29 @@
 @tailwind base;
+
+body {
+    color: #24292e;
+}
+
+p {
+    color: #586069;
+}
+
+h1 {
+    @apply text-2xl;
+}
+
+h4 {
+    @apply font-bold text-sm;
+}
+
+label {
+    @apply font-bold text-sm;
+    color: #24292e;
+}
+
+a {
+    color: #0366d6;
+}
+
 @tailwind components;
 @tailwind utilities;
